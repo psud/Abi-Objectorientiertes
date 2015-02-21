@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/mainAdd"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Neuer Mensch" />
+    
+    
+    <Button
+        android:id="@+id/mainDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Display All" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/startEditGo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Search"
+            android:layout_alignParentRight="true"
+             />
+        <AutoCompleteTextView
+            android:id="@+id/startEditEt"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Edit Mensch"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/startEditGo"
+            android:inputType="textPersonName" >
+        </AutoCompleteTextView>
+
+        
+    </RelativeLayout>
+ <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/startCountryGo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Search"
+            android:layout_alignParentRight="true"
+             />
+        <EditText
+            android:id="@+id/startCountry"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Search Country"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/startCountryGo"
+            android:inputType="textPersonName" >
+        </EditText>
+    </RelativeLayout>
+</LinearLayout>

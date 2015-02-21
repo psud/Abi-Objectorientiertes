@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/allSearchB"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:hint="Namen suchen"
+            android:layout_alignParentRight="true"
+             />
+        <EditText
+            android:id="@+id/allSearchEt"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/allSearchB"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        
+    </RelativeLayout>
+    
+<ExpandableListView
+    android:id="@+id/all_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</ExpandableListView>
+
+</LinearLayout>
